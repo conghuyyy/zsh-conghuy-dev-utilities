@@ -23,18 +23,15 @@ checking_typescript="${LIGHT_BLUE}[Typescript] ${LIGHT_CYAN}Checking the generat
 pulling_from="${YELLOW}Pulling code from"
 pushing_to="${YELLOW}Pushing code to"
 force_pushing_to="${LIGHT_RED}Force-pushing${YELLOW} code to"
-develop_branch_text="the ${LIGHT_GREEN}DEVELOP${YELLOW} branch${RESET_FORMAT}"
 
 alias current_branch_text='echo "the ${LIGHT_GREEN}$(current_branch)${YELLOW} branch${RESET_FORMAT}"'
 alias message_done='echo -e "${LIGHT_GREEN}Done!${RESET_FORMAT}"'
 alias message_checking_typescript='echo -e "${checking_typescript}"'
-alias message_pulling_develop='echo -e "${pulling_from} ${develop_branch_text}"'
 alias message_pulling_code='echo -e "${pulling_from} $(current_branch_text)"'
 alias message_pushing_code='echo -e "${pushing_to} $(current_branch_text)"'
 alias message_force_pushing_code='echo -e "${force_pushing_to} $(current_branch_text)"'
 
 # Github command alias
-alias gp='message_pulling_develop && git pull origin develop && message_done'
 alias checkout='git checkout'
 alias checkdev='git checkout develop'
 alias push='message_pushing_code && git push origin $(current_branch) && message_done'
