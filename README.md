@@ -1,3 +1,5 @@
+[GUIDE here!](https://github.com/conghuyyy/zsh-conghuy-plugin-updater/blob/main/GUIDE.md)
+
 # Installation
 
 ## Oh My Zsh
