@@ -1,4 +1,4 @@
-[GUIDE here!](https://github.com/conghuyyy/zsh-conghuy-plugin-updater/blob/main/GUIDE.md)
+[GUIDE here!](https://github.com/conghuyyy/zsh-conghuy-dev-utilities/blob/main/GUIDE.md)
 
 # Installation
 
