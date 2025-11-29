@@ -67,6 +67,8 @@ pull() {
   git pull origin "$branch" && message_done
 }
 
+alias gp='pull'
+
 # Custom 'commit' function:
 # - Shows git user info (via `me`)
 # - Waits for typing 'ok' text

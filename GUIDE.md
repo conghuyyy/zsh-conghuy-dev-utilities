@@ -13,10 +13,11 @@
 
 ## 🔹 Git Push / Pull / Reset / Branch Ops
 | Name                     | Type     | Description                                                        |
-| ------------------------ | -------- | ------------------------------------------------------------------ |
+|--------------------------|----------|--------------------------------------------------------------------|
 | `push`                   | alias    | Shows a message → pushes current branch to origin → shows “Done”.  |
 | `force_push`             | alias    | Shows a warning → runs `git push --force-with-lease`.              |
 | `pull <branch?>`         | function | Pulls from the specified branch, or the current branch if omitted. |
+| `gp`                     | alias    | Use `pull` alias behind the scene, pulls from current branch         |
 | `revert_previous_commit` | alias    | Soft-resets to previous commit (`git reset --soft HEAD@{1}`).      |
 | `gf`                     | alias    | Runs `git fetch` → prints “Done”.                                  |
 
