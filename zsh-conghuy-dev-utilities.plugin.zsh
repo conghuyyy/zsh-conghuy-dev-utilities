@@ -129,6 +129,8 @@ commit() {
 # Project command alias
 alias dev="rm -f .stylelintcache .eslintcache && pnpm run clean || echo 'No clean script found, skipping...' && pnpm run dev"
 
+# Pnpm command alias
+alias p='pnpm'
 
 # Typescript command alias
 alias typecheck='message_checking_typescript && npx tsc --noEmit && message_done'
