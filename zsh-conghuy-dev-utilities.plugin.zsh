@@ -135,6 +135,8 @@ alias p='pnpm'
 # Typescript command alias
 alias typecheck='message_checking_typescript && npx tsc --noEmit && message_done'
 
+# AI agent
+alias cl='claude'
 
 # System command alias
 alias cls='clear'
