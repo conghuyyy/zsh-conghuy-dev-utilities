@@ -56,6 +56,19 @@ alias me='
   echo -e "${LIGHT_GREEN}Email:${RESET_FORMAT} $(git config user.email)"
 '
 
+# Apply a Git stash by its numeric index.
+# Example: `gsa 2` -> `git stash apply stash@{2}`
+gsa() {
+  git stash apply "stash@{$1}"
+}
+
+# Pop a Git stash by its numeric index.
+# Applies the stash and removes it from the stash list.
+# Example: `gsp 2` -> `git stash pop stash@{2}`
+gsp() {
+  git stash pop "stash@{$1}"
+}
+
 # Pull code from current branch or any branches on the remotes!
 pull() {
   # Determine target branch
