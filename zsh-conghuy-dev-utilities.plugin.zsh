@@ -32,7 +32,7 @@ alias message_pushing_code='echo -e "${pushing_to} $(current_branch_text)"'
 alias message_force_pushing_code='echo -e "${force_pushing_to} $(current_branch_text)"'
 
 # Github command alias
-alias checkout='git checkout'
+alias ck='git checkout'
 alias checkdev='git checkout develop'
 alias push='message_pushing_code && git push origin $(current_branch) && message_done'
 alias force_push='message_force_pushing_code && git push origin $(current_branch) --force-with-lease && message_done'
@@ -41,8 +41,13 @@ alias delb='git branch -D'
 alias delb_current='echo $(current_branch) | pbcopy && checkdev && delb $(pbpaste)'
 
 alias bl='git branch'
-alias glog='git log --oneline'
+alias gl='git log --oneline'
 alias stash='git stash push -m'
+alias sl='git stash list'
+alias sapp='git stash apply'
+alias spop='git stash pop'
+
+alias apply='git apply'
 alias pick='git cherry-pick'
 alias revert_previous_commit='git reset --soft HEAD@{1}'
 alias gf='git fetch && message_done'
